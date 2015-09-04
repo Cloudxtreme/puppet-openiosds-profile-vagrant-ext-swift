@@ -57,6 +57,9 @@ keystone_user_role { 'demo@demo':
   roles  => ['admin','_member_'],
   ensure => present
 }
+openiosds::namespace {'OPENIO':
+    ns => 'OPENIO',
+}
 openiosds::oioswift {'oioswift-1':
   num => '1',
   ns => 'OPENIO',
