@@ -1,4 +1,4 @@
-if $ipaddr { $ipaddr = $ipaddr }
+if $ipaddress_enp0s8 { $ipaddr = $ipaddress_enp0s8 }
 else { $ipaddr = $ipaddress }
 class { 'keystone':
   verbose        => True,
